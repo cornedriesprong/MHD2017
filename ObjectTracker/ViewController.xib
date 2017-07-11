@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="ObjectTracker" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraView" destination="sJw-NZ-wXh" id="HKc-3w-zob"/>
+                <outlet property="resetButton" destination="Ooz-IF-Eet" id="Tbe-Hl-UQT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vDi-Dq-tRT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-NZ-wXh">
+                    <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPq-qx-M2o">
+                            <rect key="frame" x="608" y="10" width="51" height="31"/>
+                            <connections>
+                                <action selector="switchValueChanged:" destination="-1" eventType="valueChanged" id="Nl3-0q-Sah"/>
+                            </connections>
+                        </switch>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooz-IF-Eet">
+                            <rect key="frame" x="622" y="335" width="35" height="30"/>
+                            <state key="normal" title="reset"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GPq-qx-M2o" firstAttribute="top" secondItem="sJw-NZ-wXh" secondAttribute="top" constant="10" id="32S-aS-BpD"/>
+                        <constraint firstAttribute="trailing" secondItem="GPq-qx-M2o" secondAttribute="trailing" constant="10" id="JcR-FX-Mze"/>
+                        <constraint firstAttribute="bottom" secondItem="Ooz-IF-Eet" secondAttribute="bottom" constant="10" id="uFe-Lw-3c4"/>
+                        <constraint firstAttribute="trailing" secondItem="Ooz-IF-Eet" secondAttribute="trailing" constant="10" id="xUn-ht-VrP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sJw-NZ-wXh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TGE-zI-qVs"/>
+                <constraint firstAttribute="trailing" secondItem="sJw-NZ-wXh" secondAttribute="trailing" id="VCY-VR-hON"/>
+                <constraint firstItem="sJw-NZ-wXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iue-WE-LkC"/>
+                <constraint firstAttribute="bottom" secondItem="sJw-NZ-wXh" secondAttribute="bottom" id="rMe-AQ-9my"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
